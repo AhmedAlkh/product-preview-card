@@ -10,7 +10,10 @@ body {
 /* Main container  */
 main {
     display: flex;
-    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    perspective: 1px;
+    border-radius: 20px;
 }
 
 /* image container  */
@@ -20,6 +23,7 @@ main {
 
 /* content container  */
 .content-container {
+    display: table-cell;
     width: 300px;
     background-color: hsl(0, 0%, 100%);
     text-align: center;
@@ -40,6 +44,7 @@ main {
     margin-top: 30px;
     font-family: "montserrat";
     letter-spacing: 3px;
+    color: gray;
 }
 
 .perfume-name {
@@ -52,6 +57,7 @@ main {
 .description {
     margin-top: 20px;
     font-family: "montserrat";
+    color: gray;
 }
 
 .new-price {
@@ -64,7 +70,7 @@ span {
     font-family: "montserrat";
     font-size: 15px;
     text-decoration: line-through;
-    color: black;
+    color: gray;
 }
 
 .cart-button {
@@ -109,9 +115,26 @@ footer {
     height: 30px;   /* Height of the footer */
  }
 
-.attribution { 
-font-size: 11px; 
-text-align: center; }
+    .attribution { 
+    font-size: 11px; 
+    text-align: center; }
 
-.attribution a { 
-color: hsl(228, 45%, 44%); }
+    .attribution a { 
+    color: hsl(228, 45%, 44%); }
+
+    /* MEDIA QUERIES  */
+
+    @media screen and (max-width: 375px) {
+        main {
+            display: inline-block;
+            margin-bottom: 50px;
+        }
+
+        .image-container img{
+            height: 200px;
+        }
+
+        .cart-button {
+            margin-bottom: 8px;
+        }
+    }
