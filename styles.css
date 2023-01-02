@@ -8,12 +8,14 @@ body {
 
 /* Main container  */
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    border-radius: 5px;
 }
 
 /* image container  */
-
+.image-container {
+    flex: 1;
+}
 
 /* content container  */
 .content-container {
