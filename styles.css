@@ -7,8 +7,13 @@ body {
 }
 
 /* Main container  */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 /* image container  */
+
 
 /* content container  */
 .content-container {
