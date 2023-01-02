@@ -1,6 +1,19 @@
 /* BODY  */
 body {
     background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+/* Main container  */
+
+/* image container  */
+
+/* content container  */
+.content-container {
+    width: 300px;
+    background-color: hsl(0, 0%, 100%);
 }
 
 /* FOOTER  */
