@@ -21,6 +21,10 @@ main {
     flex: 1;
 }
 
+img {
+    height: 100%;
+}
+
 /* content container  */
 .content-container {
     display: table-cell;
@@ -45,6 +49,8 @@ main {
     font-family: "montserrat";
     letter-spacing: 3px;
     color: gray;
+    font-size: 16px;
+    font-weight: lighter;
 }
 
 .perfume-name {
@@ -124,7 +130,7 @@ footer {
 
     /* MEDIA QUERIES  */
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 612px) {
         main {
             display: inline-block;
             margin-bottom: 50px;
